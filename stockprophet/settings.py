@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'stock',
-    'import_export'
+    'import_export',
+    
 
 ]
 SITE_ID = 1
