@@ -1,11 +1,16 @@
 
 
-  <form method="get">
-    {{ filter.form.as_p }}
+<form method="get">
+    <p><label for="id_company_name">Company name contains:</label>
+     <input type="text" name="company_name" id="id_company_name"></p>
     <button type="submit">Search</button>
   </form>
   <ul>
   {% for stock in filter.qs %}
+
     <li>{{ stock.company_name }} - {{ stock.index1 }}</li>
+
   {% endfor %}
+
+
   </ul>
